@@ -39,6 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DataContext.cs" />
+    <Compile Include="Data\StorageDataContext.cs" />
+    <Compile Include="Models\DriverLicense.cs" />
+    <Compile Include="Models\Identified.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
