@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Data\DataContextTest.cs" />
     <Compile Include="Data\DefaultDataContextTest.cs" />
+    <Compile Include="Models\DriverLicenseRecordTest.cs" />
     <Compile Include="Models\PersonRecordTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

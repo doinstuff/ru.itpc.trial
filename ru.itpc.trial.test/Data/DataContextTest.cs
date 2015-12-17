@@ -44,5 +44,26 @@ namespace ru.itpc.trial.test.Data
             Assert.NotNull(persons);
             Assert.AreEqual(0, persons.Count());
         }
+
+        [Test]
+        public void StorageDataContext_contains_DriverLicenses_test()
+        {
+            Assert.NotNull(this.dataContext.Get<List<DriverLicenseRecord>>());
+            Assert.AreEqual(0, this.dataContext.Get<List<DriverLicenseRecord>>().Count);
+        }
+
+        [Test]
+        public void StorageDataContext_contains_List_of_strings_test()
+        {
+            Assert.NotNull(this.dataContext.Get<List<string>>());
+            Assert.AreEqual(0, this.dataContext.Get<List<string>>().Count);
+        }
+
+        [Test]
+        public void StorageDataContext_contains_List_of_integers_test()
+        {
+            Assert.NotNull(this.dataContext.Get<ICollection<int>>());
+            Assert.AreEqual(0, this.dataContext.Get<IEnumerable<int>>().Count());
+        }
     }
 }
