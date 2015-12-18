@@ -65,5 +65,11 @@ namespace ru.itpc.trial.test.Data
             Assert.NotNull(this.dataContext.Get<ICollection<int>>());
             Assert.AreEqual(0, this.dataContext.Get<IEnumerable<int>>().Count());
         }
+
+        [Test]
+        public void StorageDataContext_store_LastChange_date_test()
+        {
+            Assert.LessOrEqual(this.dataContext.Get<DateTime>(), DateTime.Now);
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace ru.itpc.trial.Data
         public List<DriverLicenseRecord> DriversLicensesRecords { get; set; }
         public List<string> Strings { get; set; }
         public List<int> Integers { get; set; }
+        public DateTime LastChange { get; set; }
 
         public StorageDataContext()
         {
@@ -21,6 +22,7 @@ namespace ru.itpc.trial.Data
             this.DriversLicensesRecords = new List<DriverLicenseRecord>();
             this.Strings = new List<string>();
             this.Integers = new List<int>();
+            this.LastChange = DateTime.Now;
         }
 
         public T Get<T>()
