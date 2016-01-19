@@ -1,6 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using ru.itpc.trial.Models;
+using ru.itpc.trial.Data;
 
 namespace ru.itpc.trial.test.Models
 {

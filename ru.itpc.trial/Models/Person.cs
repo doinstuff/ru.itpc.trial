@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ru.itpc.trial.Models
 {
-    public interface Person
+    public interface Person : Identified<string>
     {
         string FirstName { get; }
         string LastName { get; }

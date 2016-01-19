@@ -40,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\DataContext.cs" />
+    <Compile Include="Data\DefaultDataContext.cs" />
+    <Compile Include="Data\DriverLicenseRecord.cs" />
+    <Compile Include="Data\PersonRecord.cs" />
     <Compile Include="Data\StorageDataContext.cs" />
     <Compile Include="Models\DriverLicense.cs" />
     <Compile Include="Models\Identified.cs" />
